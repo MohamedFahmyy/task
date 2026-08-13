@@ -35,15 +35,8 @@ export default function Home() {
     document.documentElement.setAttribute("data-theme", nextTheme);
   };
 
-  // Safe hydration check
-  if (!mounted) {
-    return (
-      <div style={{ minHeight: "100vh", backgroundColor: "#080c14" }} />
-    );
-  }
-
   return (
-    <>
+    <div style={{ opacity: mounted ? 1 : 0, transition: "opacity 0.3s ease" }}>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
         <Hero />
@@ -53,6 +46,6 @@ export default function Home() {
         <ChatBot />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
