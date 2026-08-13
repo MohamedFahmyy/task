@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
           </div>
           
           <h1 className="hero-title">
-            I&apos;m <span className="highlight">Mohamed Fahmy</span>
+            I&apos;m <span className="highlight">Mazin Ibrahim</span>
           </h1>
           
           <h2 className="hero-subtitle">

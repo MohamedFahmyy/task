@@ -13,7 +13,7 @@ export const ChatBot: React.FC = () => {
     {
       id: "welcome",
       sender: "ai",
-      text: "Hi! I'm Mohamed's portfolio assistant. Ask me anything about his projects, skills, or experience with React, Laravel, or Docker.",
+      text: "Hi! I'm Mazin's portfolio assistant. Ask me anything about his projects, skills, or experience with React, Laravel, or Docker.",
     },
   ]);
   const [input, setInput] = useState("");
@@ -112,7 +112,7 @@ export const ChatBot: React.FC = () => {
               </svg>
             </div>
             <div className="chat-status-info">
-              <h4>Mohamed&apos;s Assistant</h4>
+              <h4>Mazin&apos;s Assistant</h4>
               <span className="status-online">Online</span>
             </div>
           </div>

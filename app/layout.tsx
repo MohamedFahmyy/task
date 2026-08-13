@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mohamed Fahmy | AI & Full-Stack Developer Portfolio",
-  description: "Professional portfolio of Mohamed Fahmy, an AI, Cloud, and Full-Stack Developer specializing in React, Next.js, Laravel, AWS, Docker, and Gemini API integration.",
+  title: "Mazin Ibrahim | AI & Full-Stack Developer Portfolio",
+  description: "Professional portfolio of Mazin Ibrahim, an AI, Cloud, and Full-Stack Developer specializing in React, Next.js, Laravel, AWS, Docker, and Gemini API integration.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

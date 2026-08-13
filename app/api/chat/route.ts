@@ -8,7 +8,7 @@ export async function POST(request: Request) {
     if (!apiKey) {
       return NextResponse.json(
         {
-          reply: "Hello! Thank you for interacting with my chatbot. Currently, the server's Gemini API key is not configured. Once Mohamed adds the key, you can chat with this virtual assistant. In the meantime, feel free to browse the Skills and Projects sections, or download code repositories from the links above!",
+          reply: "Hello! Thank you for interacting with my chatbot. Currently, the server's Gemini API key is not configured. Once Mazin adds the key, you can chat with this virtual assistant. In the meantime, feel free to browse the Skills and Projects sections, or download code repositories from the links above!",
         },
         { status: 200 }
       );
@@ -37,11 +37,11 @@ export async function POST(request: Request) {
     const ai = new GoogleGenAI({ apiKey });
 
     // 4. Generate content
-    const systemPrompt = `You are a virtual AI assistant representing Mohamed Fahmy, an AI / Cloud / Full-Stack Developer.
-Your goal is to answer questions about Mohamed's skills, projects, and work experience in a professional, polite, and concise manner.
+    const systemPrompt = `You are a virtual AI assistant representing Mazin Ibrahim, an AI / Cloud / Full-Stack Developer.
+Your goal is to answer questions about Mazin's skills, projects, and work experience in a professional, polite, and concise manner.
 Keep your responses short (usually 1-3 sentences) and focused.
-Here is the core information about Mohamed:
-- Full Name: Mohamed Fahmy
+Here is the core information about Mazin:
+- Full Name: Mazin Ibrahim
 - Job Title: AI / Cloud / Full-Stack Developer
 - Main Stacks: React, Next.js, TypeScript, Laravel, AWS, Docker, Kubernetes, DevOps, and GenAI.
 - Core Skills:
@@ -54,7 +54,7 @@ Here is the core information about Mohamed:
   2. E-Commerce Platform: Built with React, Laravel, MySQL, Stripe.
   3. Cloud Infrastructure Dashboard: Managing AWS resources with Next.js, TS, Docker, Kubernetes.
   4. Developer Productivity Assistant: Desktop shell tools with TypeScript, Electron, Docker.
-If the user asks questions unrelated to Mohamed or general programming/web-development topics, politely guide them back to his portfolio topics.`;
+If the user asks questions unrelated to Mazin or general programming/web-development topics, politely guide them back to his portfolio topics.`;
 
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",

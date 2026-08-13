@@ -18,7 +18,7 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme }) => {
     <nav className="navbar">
       <div className="navbar-container">
         <a href="#home" className="navbar-logo">
-          MF<span>.dev</span>
+          MI<span>.dev</span>
         </a>
 
         {/* Desktop Menu */}

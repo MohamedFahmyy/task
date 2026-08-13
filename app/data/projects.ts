@@ -20,7 +20,7 @@ export const projectsData: Project[] = [
     category: "AI",
     featured: true,
     demoUrl: "#",
-    githubUrl: "https://github.com/mohamedfahmy/ai-learning-platform",
+    githubUrl: "https://github.com/mazinibrahim/ai-learning-platform",
     visualGradient: "linear-gradient(135deg, #6366f1 0%, #22d3ee 100%)",
     iconName: "brain"
   },
@@ -31,7 +31,7 @@ export const projectsData: Project[] = [
     category: "Web",
     featured: true,
     demoUrl: "#",
-    githubUrl: "https://github.com/mohamedfahmy/laravel-react-store",
+    githubUrl: "https://github.com/mazinibrahim/laravel-react-store",
     visualGradient: "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
     iconName: "shopping-bag"
   },
@@ -42,7 +42,7 @@ export const projectsData: Project[] = [
     category: "Cloud",
     featured: true,
     demoUrl: "#",
-    githubUrl: "https://github.com/mohamedfahmy/cloud-dashboard",
+    githubUrl: "https://github.com/mazinibrahim/cloud-dashboard",
     visualGradient: "linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%)",
     iconName: "cloud"
   },
@@ -53,7 +53,7 @@ export const projectsData: Project[] = [
     category: "DevOps",
     featured: false,
     demoUrl: "#",
-    githubUrl: "https://github.com/mohamedfahmy/productivity-assistant",
+    githubUrl: "https://github.com/mazinibrahim/productivity-assistant",
     visualGradient: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
     iconName: "terminal"
   }
