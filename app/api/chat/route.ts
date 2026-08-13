@@ -57,7 +57,7 @@ Here is the core information about Mazin:
 If the user asks questions unrelated to Mazin or general programming/web-development topics, politely guide them back to his portfolio topics.`;
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemini-1.5-flash",
       contents: message,
       config: {
         systemInstruction: systemPrompt,
@@ -70,8 +70,9 @@ If the user asks questions unrelated to Mazin or general programming/web-develop
     return NextResponse.json({ reply });
   } catch (error: unknown) {
     console.error("Gemini API route error:", error);
+    const errorMessage = error instanceof Error ? error.message : "An unexpected error occurred while communicating with Gemini.";
     return NextResponse.json(
-      { error: "An internal server error occurred while processing the chat." },
+      { error: errorMessage },
       { status: 500 }
     );
   }
