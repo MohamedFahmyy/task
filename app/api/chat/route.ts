@@ -57,7 +57,7 @@ Here is the core information about Mazin:
 If the user asks questions unrelated to Mazin or general programming/web-development topics, politely guide them back to his portfolio topics.`;
 
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
+      model: "gemini-3.5-flash",
       contents: message,
       config: {
         systemInstruction: systemPrompt,
